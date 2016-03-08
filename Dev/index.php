@@ -12,8 +12,10 @@
             </header>
 
 			<div role="main" class="main">
-
-
+                <?php include('php/homepage-carousel.php'); ?>
+                <?php include('php/homepage-services.php'); ?>
+                <?php include('php/homepage-responsive.php'); ?>
+                <?php include('php/homepage-users.php'); ?>
  
 			<footer id="footer">
 				<?php include ('php/footer.php'); ?>
