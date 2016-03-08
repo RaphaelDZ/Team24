@@ -25,10 +25,10 @@
 										<ul class="nav nav-pills">
 											
 											<li class="hidden-xs">
-												<a href="contact-us.html"><i class="fa fa-angle-right"></i> Inscription</a>
+												<a href="inscription.php"><i class="fa fa-angle-right"></i> Inscription</a>
 											</li>
-											<li>
-												<span class="ws-nowrap"><i class="fa fa-angle-right"></i> Connexion</span>
+											<li class="hidden-xs">
+												<a href="connexion.php"><i class="fa fa-angle-right"></i> Connexion</a>
 											</li>
 										</ul>
 									</nav>

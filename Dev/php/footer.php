@@ -11,7 +11,7 @@
 							</div>
 						</div>
 						<div class="col-md-3">
-							<h4>Derniers Twwets</h4>
+							<h4>Derniers Tweets</h4>
 							<div id="tweet" class="twitter" data-plugin-tweets data-plugin-options='{"username": "", "count": 2}'>
 								<p>Please wait...</p>
 							</div>
