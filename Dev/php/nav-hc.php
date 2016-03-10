@@ -5,7 +5,7 @@
 							<div class="header-column">
 								<div class="header-logo">
 									<a href="index.html">
-										<img alt="StudentHood" width="200" height="54" data-sticky-width="130" data-sticky-height="40" data-sticky-top="33" src="img/logo.jpg">
+										<img alt="StudentHood" width="200" height="54" data-sticky-width="130" data-sticky-height="40" data-sticky-top="33" src="img/logo.png">
 									</a>
 								</div>
 							</div>

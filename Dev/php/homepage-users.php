@@ -1,24 +1,42 @@
-<div class="container">  
-<h1>Commentaire</h1>
-    <a><img src="img/chien.jpg" width="100"/> Commentateur </a>
-   <p> Sea utroque hendrerit definitiones at. Sit ei viderer indoctum. Eos ponderum consectetuer te. Ut ipsum propriae adipiscing nam, ea possit inimicus nam. Labore euripidis his eu. Torquatos inciderint eam at, no munere fastidii recusabo mel.
+     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
 
-Per at delenit scribentur intellegebat, dictas consetetur argumentum et pri. Ad movet primis facilisis cum, eum ex dicunt mentitum, ad has hinc solum repudiare. Iudico dictas qui in, an audire senserit dissentias eam, mei ad alia vidisse epicurei. An solet meliore usu, ne sit probo tollit blandit, ex qui integre delenit voluptaria. Sea ei doming platonem.
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="http://placehold.it/1920x800" alt="...">
+          <div class="carousel-caption">
+             <h3>Nom</h3>
+              <p>Commentaire multiligne.</p>
+          </div>
+        </div>
+         <div class="item">
+          <img src="http://placehold.it/1920x800" alt="...">
+          <div class="carousel-caption">
+             <h3>Nom</h3>
+              <p>Commentaire multiligne.</p>
+          </div>
+        </div>
+           <div class="item">
+          <img src="http://placehold.it/1920x800" alt="...">
+          <div class="carousel-caption">
+             <h3>Nom</h3>
+              <p>Commentaire multiligne.</p>
+          </div>
+        </div>
 
-An amet voluptatum referrentur has, an has audire repudiare. Et eum eloquentiam reformidans. Dicat fuisset eum ea, id mei probo malorum perpetua. Pro at illum simul fastidii, cibo inimicus adipiscing id vim.
-
-Vis ad tempor mediocrem. Cibo denique dissentiet est an, mei vero recusabo an. Eu his ubique nominati, alterum mandamus at sed, vim te meliore probatus. Eos et oportere percipitur.
-
-Ex mea solum inermis intellegebat, dicit feugiat vis eu. Admodum disputationi comprehensam pri ne, ad porro gubergren mei. Eu quo graecis corrumpit, quod nostro melius eum id. Sit te iusto vocent, id usu meis iusto postulant, an his quot assum invenire.
-
-Nam dicta denique definitionem ea, philosophia consectetuer nam an. Fugit atqui te sed. Sanctus iracundia vix no. Id tale nullam eos. Mel et putent pertinax necessitatibus, et modo deseruisse definiebas eam. Quis facete fuisset vim ei, ius adhuc commune et.
-
-Mandamus scriptorem his ut, alii eloquentiam vel eu. Sea eu movet nonumes legendos, suscipit urbanitas reprimique ad vel, in delectus omittantur vel. Vis oporteat assentior eu, qui ei virtute sapientem suavitate. Tempor officiis disputationi eu nec, est ex aliquid consulatu voluptatum, quando putent eos an.
-
-Et vel porro quando melius. Est rebum dolores sensibus ne, iusto expetenda per ad. Commune pericula efficiendi sea eu. Eu vim modo accusam appetere, sed doctus posidonium ad. His ea fugit inani.
-
-No eum augue aliquid, dicta iudicabit voluptatibus ea sed. Eum at labore urbanitas. Singulis nominati et mei, altera nostrum id duo. Usu ut eruditi singulis accusata.
-
-Nec ei meliore partiendo periculis, ex ceteros detraxit cum, ne usu integre constituto delicatissimi. Sit lorem necessitatibus ex, eam ad assentior constituam. Atqui gubergren dissentias eum ne, eum no minim quaestio urbanitas, molestie percipitur cu mel. Et omnium utroque accusam nec.
-     </p>
-</div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>

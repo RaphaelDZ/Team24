@@ -1,1 +1,25 @@
 /* Add here all your CSS customizations */
+
+#resp {
+    position: relative;
+    top: -20px;
+}
+.resp {
+    background-image: url("../img/responsive-ready.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 233px;
+
+}
+
+.resp h4 {
+    color: black;
+}
+
+.responsive-left {
+
+}
+
+.responsive-right {
+    float: right;
+}

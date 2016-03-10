@@ -13,7 +13,7 @@
                         <div class="category" data-url="/categories/mes-evenements-anniversaire-mariage-wedding-planner" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="img/incone_evenement.jpg">
+                                    <div class="fa fa-users">
                                     </div>
                                 </div>
                             </div>
@@ -22,7 +22,7 @@
                         <div class="category" data-url="/categories/aide-a-domicile-service-a-la-personne-pas-cher" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="img/incone_cours.jpg">
+                                    <div class="fa fa-book">
                                     </div>
                                 </div>
                             </div>
@@ -31,7 +31,7 @@
                         <div class="category" data-url="/categories/mes-animaux" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                      <div class="img/incone_sports.jpg"> 
+                                      <div class="fa fa-soccer-ball-o"> 
                                       </div>
                                 </div>
                             </div>
@@ -40,7 +40,7 @@
                         <div class="category" data-url="/categories/trouver-babysitter-nounou-a-domicile-garde-enfant" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="img/incone_informatique.jpg">
+                                    <div class="fa fa-usb">
                                     </div>
                                 </div>
                             </div>
@@ -49,7 +49,7 @@
                         <div class="category" data-url="/categories/ma-sante" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="img/incone_cuisine.jpg">
+                                    <div class="fa fa-cutlery">
                                     </div>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@
                         <div class="category" data-url="/categories/coach-sportif-professeur-de-sport" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="img/incone_bricolage.jpg">
+                                    <div class="fa fa-gavel">
                                     </div>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@
                         <div class="category" data-url="/categories/mon-look" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="img/incone_jeux_video.jpg">
+                                    <div class="fa fa-gamepad">
                                     </div>
                                 </div>                            
                             </div>
@@ -76,7 +76,7 @@
                         <div class="category" data-url="/categories/mes-voyages" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="img/incone_electromenager.jpg">
+                                    <div class="fa fa-gamepad">
                                     </div>
                                 </div>
                             </div>
@@ -85,7 +85,7 @@
                         <div class="category" data-url="/categories/trouver-car-wash-domicile" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="img/incone_vetements.jpg">
+                                    <div class="fa fa-shopping-bag">
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@
                         <div class="category" data-url="/categories/mes-formations" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="img/incone_vehicules.jpg">
+                                    <div class="fa fa-automobile">
                                 </div>
                             </div>
                         </div>

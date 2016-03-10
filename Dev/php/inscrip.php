@@ -36,7 +36,7 @@ if(!empty($_FILES) && empty($errors)){
     $file_extension=strrchr($file_name, ".");
 
     $file_tmp_name=$_FILES['avatar']['tmp_name'];
-    $file_dest='img/'.$file_name;
+    $file_dest='img/users/';
     
     if(move_uploaded_file($file_tmp_name, $file_dest)){
     
@@ -49,6 +49,5 @@ if(!empty($_FILES) && empty($errors)){
     }
   }
 } 
-include_once("inscription.html");
-?>
+
 

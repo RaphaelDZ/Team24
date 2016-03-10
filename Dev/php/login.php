@@ -9,7 +9,7 @@ include_once("bdd.php");
         if (empty($email)||empty($password)) 
         {
             // verifier si le form est bien remplie
-            header("Location:../connexion.php?error=Veuillez remplir le frmulaire.");
+            header("Location:../connexion.php?error=Veuillez remplir le formulaire.");
             
         }
         else
@@ -39,14 +39,14 @@ include_once("bdd.php");
                     $duree= time( ) + 365*24*3600;
                     setcookie('id_log', $_SESSION['id_user']);  // Creation d'un Cookie
                 }
-                header("Location:profil.php");
+                header("Location:../profil.php");
             }
             else
             {
-                header("Location:../connexion.php?error=Email ou mot de passe incorrecte !!");
+                header("Location:../connexion.php?error=Email ou mot de passe incorrect !!");
                 
             }
         }
 }
-    header("Location:../connexion.php?error=Email ou mot de passe incorect.");
+    
 ?>
