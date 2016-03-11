@@ -23,3 +23,9 @@
 .responsive-right {
     float: right;
 }
+
+.fa-services {
+    font-size: 80px;
+    position: relative;
+    top: 16px;
+}

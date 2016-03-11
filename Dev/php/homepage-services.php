@@ -1,5 +1,5 @@
 <head>
-    <link href="//www.gpaltemps.com/css/dist/eNpdjFEOgCAMQ-_iPxK_TOQ0k0zFAEM2Y7y9Gg0a_9q-ttw1bdtVllkHiDCi7omEJUN6VX1i86kMFAU2ZAq3Vo_598qBYvRopXCZ8JzOy4p5V6urg4uFsRPUo6ce_C9L4AVD4iuuzAGCwUYW.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/custom2.css" media="screen" rel="stylesheet" type="text/css">
 </head>
 
 <body class="page-mes one-column">
@@ -13,7 +13,7 @@
                         <div class="category" data-url="/categories/mes-evenements-anniversaire-mariage-wedding-planner" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="fa fa-users">
+                                    <div class="fa fa-users fa-services">
                                     </div>
                                 </div>
                             </div>
@@ -22,7 +22,7 @@
                         <div class="category" data-url="/categories/aide-a-domicile-service-a-la-personne-pas-cher" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="fa fa-book">
+                                    <div class="fa fa-book fa-services">
                                     </div>
                                 </div>
                             </div>
@@ -31,7 +31,7 @@
                         <div class="category" data-url="/categories/mes-animaux" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                      <div class="fa fa-soccer-ball-o"> 
+                                      <div class="fa fa-soccer-ball-o fa-services"> 
                                       </div>
                                 </div>
                             </div>
@@ -40,7 +40,7 @@
                         <div class="category" data-url="/categories/trouver-babysitter-nounou-a-domicile-garde-enfant" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="fa fa-usb">
+                                    <div class="fa fa-usb fa-services">
                                     </div>
                                 </div>
                             </div>
@@ -49,7 +49,7 @@
                         <div class="category" data-url="/categories/ma-sante" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="fa fa-cutlery">
+                                    <div class="fa fa-cutlery fa-services">
                                     </div>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@
                         <div class="category" data-url="/categories/coach-sportif-professeur-de-sport" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="fa fa-gavel">
+                                    <div class="fa fa-gavel fa-services">
                                     </div>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@
                         <div class="category" data-url="/categories/mon-look" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="fa fa-gamepad">
+                                    <div class="fa fa-gamepad fa-services">
                                     </div>
                                 </div>                            
                             </div>
@@ -76,7 +76,7 @@
                         <div class="category" data-url="/categories/mes-voyages" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="fa fa-gamepad">
+                                    <div class="fa fa-gamepad fa-services">
                                     </div>
                                 </div>
                             </div>
@@ -85,7 +85,7 @@
                         <div class="category" data-url="/categories/trouver-car-wash-domicile" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="fa fa-shopping-bag">
+                                    <div class="fa fa-shopping-bag fa-services">
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@
                         <div class="category" data-url="/categories/mes-formations" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="fa fa-automobile">
+                                    <div class="fa fa-automobile fa-services">
                                 </div>
                             </div>
                         </div>

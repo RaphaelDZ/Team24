@@ -36,18 +36,27 @@ if(!empty($_FILES) && empty($errors)){
     $file_extension=strrchr($file_name, ".");
 
     $file_tmp_name=$_FILES['avatar']['tmp_name'];
-    $file_dest='img/users/';
+    $file_dest='../img/users/';
     
-    if(move_uploaded_file($file_tmp_name, $file_dest)){
+    var_dump(is_dir($file_dest));
+    printf($file_dest.$file_name.'.'.$file_extension . "\n");
+    if(move_uploaded_file($file_tmp_name, $file_dest.$file_name.'.'.$file_extension)){
     
       $req= mysqli_query($bdd,'INSERT INTO user (pseudo,nom, prenom, email, numero, password, avatar) VALUES("'.$pseudo.'","'.$nom.'","'.$prenom.'","'.$email.'","'.$numero.'","'.$password.'", "'.$file_dest.'")');
 
       echo "Fichier bien envoye";
+        header(Location: ../);
+        
     
     } else {
       echo "Une erreur est survenue lors de l'envoie du fichier";
     }
-  }
-} 
+  } else {
+    if (count($errors) > 0) { printf("Error: %s", implode($errors, "<br>")); }
+    printf((empty($_FILES)) ? '$_FILES is empty' : '');
+}
+} else {
+    echo "fail";
+}
 
 

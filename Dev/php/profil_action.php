@@ -37,5 +37,5 @@ if(isset($_GET['id_user'])){
 	$data = mysqli_fetch_array($res);
 }
 
-include_once('profil.html');
+include_once('../profil.php');
 ?>
