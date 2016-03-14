@@ -1,0 +1,79 @@
+<header id="header" data-plugin-options='{"stickyEnabled": true, "stickyEnableOnBoxed": true, "stickyEnableOnMobile": true, "stickyStartAt": 57, "stickySetTop": "-57px", "stickyChangeLogo": true}'>
+                <?php include ('nav-hc.html'); ?>
+            </header>
+            <div role="main" class="main">
+                <h1>CAMPUS AFFILIÉS</h1>
+                <div id="all">
+                    <div id="middle">
+                        <div id="middle_left">
+                            
+                                <div class="h1_titre">
+                                    <h1>ingésup</h1>
+                                </div>
+                                <img id="img_manga_semaine" src="https://www.ingesup.com/wp-content/themes/ingesup/images/logo.png"/>
+                                <ul>
+                                    <li>
+                                        <h4>Description</h4>
+                                        <p>lorem ipsum  </p></li>
+                                    <li><h4>Ecole d'ingénieurie informatique</h4></li>
+                                    <li>
+                                        <p>e-mail:</p>
+                                        <p>telephone:</p>
+                                    </li>
+                                </ul>
+                                <div class="h1_titre">
+                                    <h1>infosup</h1>
+                                </div>
+                                <img id="img_manga_semaine" src="https://www.infosup.com/wp-content/themes/infosup/images/logo.png"/>
+                                <ul>
+                                    <li>
+                                        <h4>Description</h4>
+                                        <p>lorem ipsum  </p></li>
+                                    <li><h4>Ecole bts informatique</h4></li>
+                                    <li>
+                                        <p>e-mail:</p>
+                                        <p>telephone:</p>
+                                    </li>
+                                </ul>
+                                
+                            
+                <h1>CAMPUS NON AFFILIÉS</h1>
+                
+                                <div class="h1_titre">
+                                    <h1>limart</h1>
+                                </div>
+                                <img id="img_manga_semaine" src="https://www.ingesup.com/wp-content/themes/ingesup/images/logo.png"/>
+                                <ul>
+                                    <li>
+                                        <h4>Description</h4>
+                                        <p>lorem ipsum  </p></li>
+                                    <li><h4>Ecole d'art</h4></li>
+                                    <li>
+                                        <p>e-mail:</p>
+                                        <p>telephone:</p>
+                                    </li>
+                                </ul>
+                                <div class="h1_titre">
+                                    <h1>essca management</h1>
+                                </div>
+                                <img id="img_manga_semaine" src="https://www.ingesup.com/wp-content/themes/ingesup/images/logo.png"/>
+                                <ul>
+                                    <li>
+                                        <h4>Description</h4>
+                                        <p>lorem ipsum  </p></li>
+                                    <li><h4>Ecole de management</h4></li>
+                                    <li>
+                                        <p>e-mail:</p>
+                                        <p>telephone:</p>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
