@@ -45,7 +45,8 @@ if(!empty($_FILES) && empty($errors)){
       $req= mysqli_query($bdd,'INSERT INTO user (pseudo,nom, prenom, email, numero, password, avatar) VALUES("'.$pseudo.'","'.$nom.'","'.$prenom.'","'.$email.'","'.$numero.'","'.$password.'", "'.$file_dest.'")');
 
       echo "Fichier bien envoye";
-        header(Location: ../);
+        header('Location: ../membre/');
+    echo '<br/><a href="../">Retour</a>';
         
     
     } else {

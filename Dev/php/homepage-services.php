@@ -76,7 +76,7 @@
                         <div class="category" data-url="/categories/mes-voyages" aria-haspopup="true">
                             <div class="icon-wrapper">
                                 <div class="icon-wrapper-table">
-                                    <div class="fa fa-gamepad fa-services">
+                                    <div class="fa fa-steam fa-services">
                                     </div>
                                 </div>
                             </div>
@@ -99,6 +99,24 @@
                             </div>
                         </div>
                         <span class="name">VEHICULES</span>
+                    </div>
+                        <div class="category" data-url="/categories/mes-formations" aria-haspopup="true">
+                            <div class="icon-wrapper">
+                                <div class="icon-wrapper-table">
+                                    <div class="fa fa-music fa-services">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="name">MUSIQUE</span>
+                    </div>
+                        <div class="category" data-url="/categories/mes-formations" aria-haspopup="true">
+                            <div class="icon-wrapper">
+                                <div class="icon-wrapper-table">
+                                    <div class="fa fa-gears fa-services">
+                                </div>
+                            </div>
+                        </div>
+                        <span class="name">AUTRE</span>
                     </div>
                 </div>
                 <div class="row">

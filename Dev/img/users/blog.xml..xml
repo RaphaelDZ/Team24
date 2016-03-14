@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.1.14
+- http://www.phpmyadmin.net
+-
+- Client :  127.0.0.1
+- Généré le :  Mar 08 Mars 2016 à 16:08
+- Version du serveur :  5.6.17
+- Version de PHP :  5.5.12
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="blog" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="articles">
+                CREATE TABLE `articles` (
+                  `id_article` int(11) NOT NULL AUTO_INCREMENT,
+                  `titre_article` varchar(150) CHARACTER SET utf8 NOT NULL,
+                  `id_user` int(11) NOT NULL,
+                  `corps_article` text CHARACTER SET utf8 NOT NULL,
+                  `date_article` datetime NOT NULL,
+                  `prix` float NOT NULL DEFAULT '1',
+                  `image` varchar(150) CHARACTER SET utf8 NOT NULL,
+                  PRIMARY KEY (`id_article`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="commentaires">
+                CREATE TABLE `commentaires` (
+                  `id_commentaire` int(11) NOT NULL AUTO_INCREMENT,
+                  `id_article` int(11) NOT NULL,
+                  `id_user` int(11) NOT NULL,
+                  `corps_commentaire` text CHARACTER SET utf8 NOT NULL,
+                  `date_commentaire` datetime NOT NULL,
+                  PRIMARY KEY (`id_commentaire`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="historique">
+                CREATE TABLE `historique` (
+                  `id_article` int(11) NOT NULL,
+                  `id_user` int(11) NOT NULL,
+                  `date_vu` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                  PRIMARY KEY (`id_article`,`id_user`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="user">
+                CREATE TABLE `user` (
+                  `id_user` int(11) NOT NULL AUTO_INCREMENT,
+                  `nom` varchar(50) CHARACTER SET utf8 NOT NULL,
+                  `prenom` varchar(50) CHARACTER SET utf8 NOT NULL,
+                  `pseudo` varchar(50) CHARACTER SET utf8 NOT NULL,
+                  `email` varchar(50) CHARACTER SET utf8 NOT NULL,
+                  `numero` int(10) NOT NULL,
+                  `password` varchar(60) CHARACTER SET utf8 NOT NULL,
+                  `avatar` varchar(150) CHARACTER SET utf8 NOT NULL,
+                  `statut` int(1) NOT NULL DEFAULT '1' COMMENT '1=user;3=admin;4=banni',
+                  PRIMARY KEY (`id_user`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="voting_count">
+                CREATE TABLE `voting_count` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `unique_content_id` varchar(100) CHARACTER SET utf8 NOT NULL,
+                  `vote_up` int(11) NOT NULL,
+                  `vote_down` int(11) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Base de données :  'blog'
+    -->
+    <database name="blog">
+        <!-- Table articles -->
+        <table name="articles">
+            <column name="id_article">1</column>
+            <column name="titre_article">Grand Theft Auto V - PC</column>
+            <column name="id_user">4</column>
+            <column name="corps_article">Los Santos : une m&amp;eacute;tropole tentaculaire avec ses gourous, ses starlettes et ses gloires du pass&amp;eacute; fan&amp;eacute;es qui faisaient jadis r&amp;ecirc;ver le monde entier et qui, aujourd'hui, luttent pour ne pas sombrer dans l'oubli alors que le pays est rong&amp;eacute; par la crise. Au milieu de ce chaos ensoleill&amp;eacute;, trois criminels tr&amp;egrave;s diff&amp;eacute;rents jouent gros pour leur avenir.</column>
+            <column name="date_article">2015-05-19 09:08:37</column>
+            <column name="prix">60</column>
+            <column name="image">img/pc10.jpg</column>
+        </table>
+        <table name="articles">
+            <column name="id_article">2</column>
+            <column name="titre_article">Destiny</column>
+            <column name="id_user">3</column>
+            <column name="corps_article"> Destiny sur PlayStation 4 est un FPS cr&amp;eacute;&amp;eacute; par les papas de la s&amp;eacute;rie des Halo. Le joueur &amp;eacute;volue au c&amp;oelig;ur d'un univers futuriste infest&amp;eacute; d'aliens dans lequel la coop et le multijoueur sont grandement favoris&amp;eacute;s, permettant de mettre en place des combats strat&amp;eacute;giques.</column>
+            <column name="date_article">2015-03-26 19:39:34</column>
+            <column name="prix">50</column>
+            <column name="image">img/desti.jpg</column>
+        </table>
+        <table name="articles">
+            <column name="id_article">5</column>
+            <column name="titre_article">Mortal Kombat X</column>
+            <column name="id_user">5</column>
+            <column name="corps_article">Mortal Kombat X sur PS4 est le dixi&amp;egrave;me opus de la s&amp;eacute;rie de jeux de combats du m&amp;ecirc;me nom. Choisissez parmi les 24 personnages disponibles et affrontez-vous au cours de batailles particuli&amp;egrave;rement gores.Utilisez des &amp;eacute;l&amp;eacute;ments du d&amp;eacute;cors et achevez-vous avec des fatalities toujours plus exub&amp;eacute;rantes.</column>
+            <column name="date_article">2015-05-11 10:21:03</column>
+            <column name="prix">60</column>
+            <column name="image">img/69126-mortal-kombat-x.png</column>
+        </table>
+        <table name="articles">
+            <column name="id_article">6</column>
+            <column name="titre_article">NBA 2K15</column>
+            <column name="id_user">12</column>
+            <column name="corps_article"> NBA 2K15 est un jeu de basket-ball sur PC. Le jeu propose de tr&amp;egrave;s nombreuses animations pour les joueurs qui le rendent extr&amp;ecirc;mement cr&amp;eacute;dible d'un point de vue visuel, mais aussi technique. Il est possible de cr&amp;eacute;er son propre joueur pour tenter de percer en NBA, ou de devenir manager g&amp;eacute;n&amp;eacute;ral d'une &amp;eacute;quipe. Le titre embarque &amp;eacute;galement un mode online tr&amp;egrave;s complet.</column>
+            <column name="date_article">2015-05-19 18:34:15</column>
+            <column name="prix">40</column>
+            <column name="image">img/yMapwIE.png</column>
+        </table>
+        <table name="articles">
+            <column name="id_article">7</column>
+            <column name="titre_article">cool</column>
+            <column name="id_user">13</column>
+            <column name="corps_article">cool</column>
+            <column name="date_article">2016-03-07 21:18:10</column>
+            <column name="prix">12</column>
+            <column name="image">img/lezapp568a0a6d88b43.png</column>
+        </table>
+        <!-- Table commentaires -->
+        <table name="commentaires">
+            <column name="id_commentaire">3</column>
+            <column name="id_article">1</column>
+            <column name="id_user">4</column>
+            <column name="corps_commentaire">Je possÃ¨de 5 articles ! Contactez moi si vous Ãªtes intÃ©ressÃ©</column>
+            <column name="date_commentaire">2015-05-19 13:51:05</column>
+        </table>
+        <table name="commentaires">
+            <column name="id_commentaire">17</column>
+            <column name="id_article">2</column>
+            <column name="id_user">4</column>
+            <column name="corps_commentaire">J'aime bien !</column>
+            <column name="date_commentaire">2015-05-19 14:31:12</column>
+        </table>
+        <table name="commentaires">
+            <column name="id_commentaire">18</column>
+            <column name="id_article">1</column>
+            <column name="id_user">12</column>
+            <column name="corps_commentaire">Oui je suis intÃ©ressÃ© </column>
+            <column name="date_commentaire">2015-05-19 19:05:40</column>
+        </table>
+        <table name="commentaires">
+            <column name="id_commentaire">19</column>
+            <column name="id_article">2</column>
+            <column name="id_user">12</column>
+            <column name="corps_commentaire">Je suis intÃ©ressÃ© !</column>
+            <column name="date_commentaire">2015-05-19 19:06:57</column>
+        </table>
+        <table name="commentaires">
+            <column name="id_commentaire">20</column>
+            <column name="id_article">6</column>
+            <column name="id_user">13</column>
+            <column name="corps_commentaire">cool</column>
+            <column name="date_commentaire">2016-03-07 21:17:44</column>
+        </table>
+        <table name="commentaires">
+            <column name="id_commentaire">21</column>
+            <column name="id_article">6</column>
+            <column name="id_user">13</column>
+            <column name="corps_commentaire">cool</column>
+            <column name="date_commentaire">2016-03-07 21:17:46</column>
+        </table>
+        <table name="commentaires">
+            <column name="id_commentaire">22</column>
+            <column name="id_article">6</column>
+            <column name="id_user">13</column>
+            <column name="corps_commentaire">cool !!!
+</column>
+            <column name="date_commentaire">2016-03-07 21:17:54</column>
+        </table>
+        <table name="commentaires">
+            <column name="id_commentaire">23</column>
+            <column name="id_article">6</column>
+            <column name="id_user">13</column>
+            <column name="corps_commentaire">cool !!!
+</column>
+            <column name="date_commentaire">2016-03-07 21:17:54</column>
+        </table>
+        <table name="commentaires">
+            <column name="id_commentaire">24</column>
+            <column name="id_article">6</column>
+            <column name="id_user">13</column>
+            <column name="corps_commentaire">cool !!!
+</column>
+            <column name="date_commentaire">2016-03-07 21:17:54</column>
+        </table>
+        <table name="commentaires">
+            <column name="id_commentaire">25</column>
+            <column name="id_article">6</column>
+            <column name="id_user">13</column>
+            <column name="corps_commentaire">cool !!!
+</column>
+            <column name="date_commentaire">2016-03-07 21:17:54</column>
+        </table>
+        <table name="commentaires">
+            <column name="id_commentaire">26</column>
+            <column name="id_article">6</column>
+            <column name="id_user">13</column>
+            <column name="corps_commentaire">cool !!!
+</column>
+            <column name="date_commentaire">2016-03-07 21:17:54</column>
+        </table>
+        <table name="commentaires">
+            <column name="id_commentaire">27</column>
+            <column name="id_article">7</column>
+            <column name="id_user">13</column>
+            <column name="corps_commentaire">cool</column>
+            <column name="date_commentaire">2016-03-07 21:18:21</column>
+        </table>
+        <table name="commentaires">
+            <column name="id_commentaire">28</column>
+            <column name="id_article">7</column>
+            <column name="id_user">13</column>
+            <column name="corps_commentaire">cool</column>
+            <column name="date_commentaire">2016-03-07 21:18:22</column>
+        </table>
+        <table name="commentaires">
+            <column name="id_commentaire">29</column>
+            <column name="id_article">7</column>
+            <column name="id_user">13</column>
+            <column name="corps_commentaire">cool</column>
+            <column name="date_commentaire">2016-03-07 21:18:22</column>
+        </table>
+        <table name="commentaires">
+            <column name="id_commentaire">30</column>
+            <column name="id_article">7</column>
+            <column name="id_user">13</column>
+            <column name="corps_commentaire">cool</column>
+            <column name="date_commentaire">2016-03-07 21:18:22</column>
+        </table>
+        <table name="commentaires">
+            <column name="id_commentaire">31</column>
+            <column name="id_article">7</column>
+            <column name="id_user">13</column>
+            <column name="corps_commentaire">cool</column>
+            <column name="date_commentaire">2016-03-07 21:18:22</column>
+        </table>
+        <!-- Table historique -->
+        <table name="historique">
+            <column name="id_article">1</column>
+            <column name="id_user">1</column>
+            <column name="date_vu">2015-03-26 19:13:58</column>
+        </table>
+        <table name="historique">
+            <column name="id_article">1</column>
+            <column name="id_user">3</column>
+            <column name="date_vu">2015-03-26 19:39:36</column>
+        </table>
+        <table name="historique">
+            <column name="id_article">1</column>
+            <column name="id_user">4</column>
+            <column name="date_vu">2015-05-15 15:37:55</column>
+        </table>
+        <table name="historique">
+            <column name="id_article">1</column>
+            <column name="id_user">12</column>
+            <column name="date_vu">2015-05-19 19:11:20</column>
+        </table>
+        <table name="historique">
+            <column name="id_article">2</column>
+            <column name="id_user">3</column>
+            <column name="date_vu">2015-03-26 19:39:40</column>
+        </table>
+        <table name="historique">
+            <column name="id_article">2</column>
+            <column name="id_user">4</column>
+            <column name="date_vu">2015-05-15 22:37:08</column>
+        </table>
+        <table name="historique">
+            <column name="id_article">5</column>
+            <column name="id_user">4</column>
+            <column name="date_vu">2015-05-15 22:05:08</column>
+        </table>
+        <table name="historique">
+            <column name="id_article">5</column>
+            <column name="id_user">12</column>
+            <column name="date_vu">2015-05-19 19:12:49</column>
+        </table>
+        <table name="historique">
+            <column name="id_article">6</column>
+            <column name="id_user">4</column>
+            <column name="date_vu">2015-05-19 19:19:25</column>
+        </table>
+        <table name="historique">
+            <column name="id_article">6</column>
+            <column name="id_user">12</column>
+            <column name="date_vu">2015-05-19 19:10:58</column>
+        </table>
+        <!-- Table user -->
+        <table name="user">
+            <column name="id_user">1</column>
+            <column name="nom">Admin</column>
+            <column name="prenom">Admin</column>
+            <column name="pseudo">Admin</column>
+            <column name="email">admin@hotmail.fr</column>
+            <column name="numero">123456789</column>
+            <column name="password">$2y$10$BvT2qy3IwE0RDWHwX3zWSuhxm2LX6tWF.mt.NBmVIK/h1JBxSXpNy</column>
+            <column name="avatar">img/callof.jpeg</column>
+            <column name="statut">3</column>
+        </table>
+        <table name="user">
+            <column name="id_user">2</column>
+            <column name="nom">Bernard</column>
+            <column name="prenom">Florian</column>
+            <column name="pseudo">Flo</column>
+            <column name="email">flo@hotmail.fr</column>
+            <column name="numero">775052545</column>
+            <column name="password">$2y$10$Mx9BAnYqai8QvdgC/sjWJOHK4SWLfjFxA1TALuAfz1xjSaM70gF4y</column>
+            <column name="avatar">img/gta.jpg</column>
+            <column name="statut">1</column>
+        </table>
+        <table name="user">
+            <column name="id_user">3</column>
+            <column name="nom">popo</column>
+            <column name="prenom">popo</column>
+            <column name="pseudo">popo</column>
+            <column name="email">popo@hotmail.fr</column>
+            <column name="numero">918254788</column>
+            <column name="password">$2y$10$BS4IsZW7wPVoRFcZ2GS2q.N7nNEtynOSWm4t9U583KSn1rgvHr.RC</column>
+            <column name="avatar">img/2013-11-Fantasy-Skull-HD-Wallpapers-Stock.jpg</column>
+            <column name="statut">1</column>
+        </table>
+        <table name="user">
+            <column name="id_user">4</column>
+            <column name="nom">Neves</column>
+            <column name="prenom">LoÃ¯c</column>
+            <column name="pseudo">lnvs75</column>
+            <column name="email">loic_neves@hotmail.fr</column>
+            <column name="numero">647827695</column>
+            <column name="password">$2y$10$ImVrxmt39sktKK3R3Bwq4OmxvBOLE2ZXQjRZYr3fRE041wEraH9.y</column>
+            <column name="avatar">img/Facebook-20141106-044128.jpg</column>
+            <column name="statut">3</column>
+        </table>
+        <table name="user">
+            <column name="id_user">5</column>
+            <column name="nom">Maillard</column>
+            <column name="prenom">Erik</column>
+            <column name="pseudo">dralliam</column>
+            <column name="email">dralliam@live.fr</column>
+            <column name="numero">123654788</column>
+            <column name="password">$2y$10$xiH7uwAuRQhfuMMg0geAq.I3uxbEKs7HyHEWH.SuUHLHVpqCGNf6O</column>
+            <column name="avatar">img/10485363_10203788182563196_1669659946_n.jpg</column>
+            <column name="statut">1</column>
+        </table>
+        <table name="user">
+            <column name="id_user">13</column>
+            <column name="nom">alouani</column>
+            <column name="prenom">ilyan</column>
+            <column name="pseudo">ilyan</column>
+            <column name="email">ilyan.alouani@ynov.com</column>
+            <column name="numero">604133085</column>
+            <column name="password">$2y$10$QjR.5j9Gpm1BeLfgK4owkug6ssoE0WW18o6Uy0mU.TcbKqZVH8KZK</column>
+            <column name="avatar">img/Fashion_Girl_Ikoseomer_Model_Nike_Portrait_Portre_Puma_Street_Style_Swag_Basketball_2048x1231.jpg</column>
+            <column name="statut">1</column>
+        </table>
+        <table name="user">
+            <column name="id_user">14</column>
+            <column name="nom">aze</column>
+            <column name="prenom">aze</column>
+            <column name="pseudo">azeaz</column>
+            <column name="email">aze@aze</column>
+            <column name="numero">0</column>
+            <column name="password">$2y$10$wCIgzfK6El2BquebD.JCVud2i8WRfl/zTB4TK6A6B7WTe5GO0lce.</column>
+            <column name="avatar">img/Fashion_Girl_Ikoseomer_Model_Nike_Portrait_Portre_Puma_Street_Style_Swag_Basketball_2048x1231.jpg</column>
+            <column name="statut">1</column>
+        </table>
+        <!-- Table voting_count -->
+    </database>
+</pma_xml_export>

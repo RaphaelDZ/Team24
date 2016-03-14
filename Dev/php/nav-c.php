@@ -1,11 +1,12 @@
 
-				<div class="header-body">
+<?php session_start(); ?>				
+<div class="header-body">
 					<div class="header-container container">
 						<div class="header-row">
 							<div class="header-column">
 								<div class="header-logo">
 									<a href="index.php">
-										<img alt="StudentHood" width="200" height="54" data-sticky-width="130" data-sticky-height="40" data-sticky-top="33" src="img/logo.png">
+										<img alt="StudentHood" width="200" height="54" data-sticky-width="130" data-sticky-height="40" data-sticky-top="33" src="../img/logo.png">
 									</a>
 								</div>
 							</div>
@@ -25,11 +26,9 @@
 										<ul class="nav nav-pills">
 											
 											<li class="hidden-xs">
-												<a href="inscription.php"><i class="fa fa-angle-right"></i> Inscription</a>
+												<a href="../profil.php"><i class="fa fa-angle-right"></i>Bonjour <?php echo $_SESSION['prenom'];?> !</a>
 											</li>
-											<li class="hidden-xs">
-												<a href="connexion.php"><i class="fa fa-angle-right"></i> Connexion</a>
-											</li>
+											
 										</ul>
 									</nav>
 								</div>

@@ -27,7 +27,7 @@ include_once("bdd.php");
             else if (password_verify($password,$hash))
             {
                 // verifier si le hash correspond au mdp entrer par l'user
-                $query=mysqli_query($bdd,"SELECT id_user FROM user WHERE password='".$hash."';") ;
+                $query=mysqli_query($bdd,"SELECT * FROM user WHERE password='".$hash."';") ;
                 $data=mysqli_fetch_array($query);
                 $_SESSION['id_user'] = $data['id_user']; // faire correspondre le mdp avec l'id de l'user.
                 
@@ -39,7 +39,8 @@ include_once("bdd.php");
                     $duree= time( ) + 365*24*3600;
                     setcookie('id_log', $_SESSION['id_user']);  // Creation d'un Cookie
                 }
-                header("Location:../profil.php");
+                $_SESSION['prenom'] = $data['prenom'];
+                header("Location:../membre/");
             }
             else
             {
