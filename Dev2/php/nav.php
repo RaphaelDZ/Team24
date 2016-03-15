@@ -1,26 +1,27 @@
-<php
-$sql = 'SELECT *FROM fichiers'; 
-  
-// on lance la requête (mysql_query) et on impose un message d'erreur si la requête ne se passe pas bien (or die)
-$req = mysql_query($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error()); 
-  
-// on va scanner tous les tuples un par un
-while ($data = mysql_fetch_array($req)) {
-      // on affiche les résultats
+<PHP
+if (isset($_POST["recherche"])) $re=trim($_POST["recherche"]);
+    else $re="";
+if ($re!="")
+  {
+   // ====== on se log a MYSQL   
+   $Flag1=mysql_connect($Serveur,$User,$Mdp)  OR die('Erreur connexion ');
+   $Flag2=mysql_select_db($MaBase) OR die('Erreur connexion ');
+   $result=mysql_query( "select * from mestables
+         WHERE  Nom >= '' and Nom<'zzzzzzzzzzzzzz'  ");
+      while ($row=mysql_fetch_array($result)) 
+         {
+          $Nom= stripslashes($row['Nom']);
+             $controle=strpos($Nom,$re);
+             if ($controle !== false) { echo $Nom}  
+         }
+   mysql_close();
  
-// Connexion
-// Requête sql normale
-// while
-{
-if (preg_match("#exemplemtclé#",$data['motsclés']))
-{
-    echo '<a href="'.$data['lien'].'"> '.$data['nom'].'</a><br> </br>';
-
-
-
-
-
-  
+   }
+ 
+<form  action="test.php" method="POST" >
+<input type="text" name="recherche" size="20"  value="" /><br />
+<input type="submit" name="Submit" value=" RECHERCHE ">
+</form>
 ?>
 <!DOCTYPE html> 
    <body>
