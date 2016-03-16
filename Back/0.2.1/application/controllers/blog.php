@@ -47,6 +47,7 @@ class Blog extends CI_Controller
         $this->load->model('m_comment');
         $data['comments'] = $this->m_comment->get_comment($post_id);    
         $data['post'] = $this->m_db->get_post($post_id);
+        $data['session'] = $this->session->userdata('user_id') ? true:false;
         $class_name = array(
             'home_class'=>'current', 
             'login_class' =>'', 
@@ -57,10 +58,27 @@ class Blog extends CI_Controller
         $this->load->view('v_single_post',$data);
         $this->load->view('footer');
     }
-    
-    function new_post()//Creating new post page
+
+    function category($category_id)
     {
-        if(!$this->check_permissions('author'))//when the user is not an andmin and author
+        $this->load->model('m_comment');
+        $data['comments'] = $this->m_comment->get_comment($category_id);
+        $data['post'] = $this->m_db->get_post($category_id);
+        $class_name = array(
+            'home_class'=>'current',
+            'login_class' =>'',
+            'register_class' =>'',
+            'upload_class' =>'',
+            'contact_class'=>'');
+        $this->load->view('header',$class_name);
+        $this->load->view('v_single_post',$data);
+        $this->load->view('footer');
+    }
+            
+    
+    function new_post()
+    {
+        if(!$this->check_permissions('author'))
         {
             redirect(base_url().'users/login');
         }
@@ -88,9 +106,9 @@ class Blog extends CI_Controller
             $this->load->view('footer');
         }
     }
-    function editpost($post_id)//Edit post page
+    function editpost($post_id)//modifier une annonce 
     {
-        if(!$this->check_permissions('author'))//when the user is not an andmin and author
+        if(!$this->check_permissions('author'))
         {
             redirect(base_url().'users/login');
         }
@@ -118,9 +136,9 @@ class Blog extends CI_Controller
         $this->load->view('v_edit_post',$data);
         $this->load->view('footer');
     }
-    function deletepost($post_id)//delete post page
+    function deletepost($post_id)//supprimer une annonce
     {
-        if(!$this->check_permissions('author'))//when the user is not an andmin and author
+        if(!$this->check_permissions('author'))
         {
             redirect(base_url().'users/login');
         }
@@ -128,23 +146,24 @@ class Blog extends CI_Controller
         redirect(base_url().'blog/');
     }
     
-    function check_permissions($required)//checking current user's permission
+    function check_permissions($required)
     {
-        $user_type = $this->session->userdata('user_type');//curren user
-        if($required == 'user')//requirment is user 
+        $user_type = $this->session->userdata('user_type');
+        if($required == 'user') 
         {
-            if($user_type){return TRUE;}//all user have permission
+            if($user_type){return TRUE;}
         }
-        elseif($required == 'author')//when requirement is author
+        elseif($required == 'author')
         {
-            if($user_type == 'author' || $user_type == 'admin')//author and admin have the permission
+            if($user_type == 'author' || $user_type == 'admin')
             {
                 return TRUE;
             }
         }
-        elseif($required == 'admin')//when required is admin
+        elseif($required == 'admin')//quand l'admin est requit
         {
-            if($user_type == 'admin'){return TRUE;}//only admin have the permission
+            if($user_type == 'admin'){return TRUE;}//que les admin ont la permission
         }
     }
 }
+

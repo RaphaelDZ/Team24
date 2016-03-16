@@ -53,7 +53,7 @@
         <a href=""><div class="services-round">
             <i class="fa fa-users"></i>
         </div>
-        <h4>évènements</h4></a>
+        <h4 href="<?=  base_url()?>blog/category/">évènements</h4></a>
     </div>
     <div class="col-lg-2 text-center">
         <a href=""><div class="services-round">

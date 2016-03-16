@@ -11,8 +11,7 @@
                 <p><span>Mot de passe</span><input class="" type="password" name="password" value="" /></p>
                 <p><span>Confirmation mot de passe</span><input class="" type="password" name="passconf" value="" /></p>
                 <p><span>Type d'utilisateur</span>
-                    <select class="form-control" name="user_type">
-                    <option value="admin">Admin</option>
+                    <select class="form-control" name="user_type">  
                     <option value="author">Auteur</option>
                     <option value="user" selected>Utilisateur</option>
                 </select>

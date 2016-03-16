@@ -82,9 +82,9 @@
                                 
                                
                                 <li><a href="#">CAMPUS</a></li>
-                                <li><a href="<?=  base_url()?>blog/home_co/">OFFRES</a></li>
+                                <li><a href="<?=  base_url()?>blog/home_co/">ANNONCES</a></li>
                                 <li><a href="#">SOUSCRIRE</a></li>
-                                <li><a href="#">CONTACT</a></li>
+                                <li><a href="<?=  base_url()?>pages/contact/">CONTACT</a></li>
                             </ul>
 
                         </div>

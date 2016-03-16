@@ -7,7 +7,11 @@
             {?>
                 <h2><?=$post['post_title']?></h2>
                 <p><?=$post['post']?></p>
+                
+                <?php if($session): ?>
                  <h2>Email:<?=$post['email']?></h2>
+             <?php endif; ?>
+
                 
                 <hr>
                 <h3>Commentaires</h3>
