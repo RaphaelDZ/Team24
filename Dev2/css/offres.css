@@ -68,8 +68,14 @@
 	font-size: 15px;
     font-style: italic;
 }
-.img {
+.centrage {
     display: block;
     margin-left: auto;
     margin-right: auto
+}
+.cellule_vide {
+    padding-left: 25px;
+    border: 0 none;
+    color: white;
+    background: white;
 }
