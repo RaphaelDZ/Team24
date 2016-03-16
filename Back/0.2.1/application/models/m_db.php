@@ -44,4 +44,5 @@ class M_db extends CI_Model
         $this->db->where('post_id',$post_id);
         $this->db->delete('posts');
     }
+
 }

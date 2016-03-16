@@ -59,22 +59,6 @@ class Blog extends CI_Controller
         $this->load->view('footer');
     }
 
-    function category($category_id)
-    {
-        $this->load->model('m_comment');
-        $data['comments'] = $this->m_comment->get_comment($category_id);
-        $data['post'] = $this->m_db->get_post($category_id);
-        $class_name = array(
-            'home_class'=>'current',
-            'login_class' =>'',
-            'register_class' =>'',
-            'upload_class' =>'',
-            'contact_class'=>'');
-        $this->load->view('header',$class_name);
-        $this->load->view('v_single_post',$data);
-        $this->load->view('footer');
-    }
-            
     
     function new_post()
     {

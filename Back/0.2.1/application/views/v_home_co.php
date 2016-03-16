@@ -2,7 +2,7 @@
    
     <div id="content">
             <form action="<?=  base_url()?>blog/new_post/" method="post">
-        <?php if($this->session->userdata('user_id') && $this->session->userdata('user_type') == 'admin')
+        <?php if($this->session->userdata('user_id') && $this->session->userdata('user_type') != 'user')
         { ?>
         <h2><a style="color: green" href="<?=  base_url()?>blog/new_post/"><span class="glyphicon glyphicon-pencil"></span> Create a new post</a></h2>
         <?php } ?>
