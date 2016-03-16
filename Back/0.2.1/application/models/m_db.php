@@ -45,4 +45,11 @@ class M_db extends CI_Model
         $this->db->delete('posts');
     }
 
+    /*function get_category($category_id)
+    {
+        $this->db->select('#');
+        $this->db->join('users', 'posts.post_id = category.category_id');
+        $this->db->where()
+    }*/
+
 }

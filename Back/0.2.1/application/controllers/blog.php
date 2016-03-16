@@ -10,6 +10,7 @@ class Blog extends CI_Controller
     }
     function index($start = 0)//index page
     {
+
         $class_name = array(
             'home_class'=>'current', 
             'login_class' => '', 
@@ -26,11 +27,11 @@ class Blog extends CI_Controller
         
         //pagination
         $this->load->library('pagination');
-        $config['base_url'] = base_url().'blog/index/';
+        $config['base_url'] = base_url().'blog/home_co/';
         $config['total_rows'] = $this->m_db->get_post_count();
         $config['per_page'] = 5; 
         $this->pagination->initialize($config); 
-        $data['pages'] = $this->pagination->create_links(); //Links of pages
+        $data['pages'] = $this->pagination->create_links(); //liens des pages
         
         $class_name = array(
             'home_class'=>'current', 
@@ -42,7 +43,7 @@ class Blog extends CI_Controller
         $this->load->view('v_home_co',$data);
         $this->load->view('footer');
     }
-    function post($post_id)//single post page
+    function post($post_id)//page publication single_post page
     {   
         $this->load->model('m_comment');
         $data['comments'] = $this->m_comment->get_comment($post_id);    
