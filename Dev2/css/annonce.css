@@ -1,0 +1,16 @@
+h1{
+    text-decoration: underline;
+}
+
+
+body table td:nth-child(2){
+    background-color:beige;
+}
+
+body table td h2{
+    background-color:#a32020 ;
+}
+
+body table td ul {
+    background-color:#d42a2a;
+}
