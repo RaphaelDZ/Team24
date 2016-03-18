@@ -1,0 +1,449 @@
+.carousel {
+    margin-top: 100px;
+}
+
+.carousel h3 {
+    color: #A32020;
+    text-transform: uppercase;
+}
+
+.carousel p {
+    color: black;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    border-bottom: 1px solid lightgray;
+}
+
+.navbar-nav a {
+    border-radius: 0.3em;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.glyph li{
+    display: inline-block;
+	font-size: 20px;
+	height: 32px;
+	padding: 0;
+	width: 32px;
+	margin-top: 0;
+	margin-bottom: 0px;
+    margin-left: 4px;
+	background: #FFF;
+	border: 1px solid #dfdfdf;
+    border-radius: 10em;
+	line-height: 73px;
+}
+
+.glyph i {
+    position: relative;
+    top: -11px;
+    left: -7px;
+}
+
+.glyph i:hover {
+    border:  white;
+}
+
+.glyph {
+    font-size:0.6em;
+    position: relative;
+    top: -1px;
+}
+
+footer .glyph i {
+    position: relative;
+    top: 6px;
+    left: 8px;
+    color: #A32020;
+}
+
+#fa-facebook:hover{
+    background-color: #3B5998;
+}
+
+#fa-twitter:hover{
+    background-color: #4099FF;
+}
+
+#fa-instagram:hover{
+    background-color: #3B5998;
+}
+
+.navbar-default .navbar-brand {
+    color: #a32020;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #A32020;
+}
+
+.navbar-default .navbar-text {
+    color: #a32020;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #a32020;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #A32020;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu {
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+    color: #a32020;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+    color: #ffffff;
+    background-color: #a32020;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+    background-color: #a32020;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #a32020;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #a32020;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #ffffff;
+    background-color: #a32020;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #a32020;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #a32020;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #a32020;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #a32020;
+}
+
+.navbar-default .navbar-link {
+    color: #a32020;
+}
+
+.navbar-default .navbar-link:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #a32020;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #ffffff;
+        background-color: #a32020;
+    }
+}
+
+
+.nav-co button{
+    border-color: white;
+    color: darkgray;
+    font-size: 0.9em;
+    position: relative;
+    left: 50px;
+    border-radius: 0.3em;
+}
+
+.nav-co button:hover {
+    border: white;
+    background-color: lightgray;
+}
+
+.search-bar{
+    border-radius: 2em;
+}
+
+
+
+footer {
+    background-color: #A32020;
+    color: black;
+    font-size: 0.9em;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+footer h3 {
+    color: white;
+}
+
+.footer-down {
+    padding-top: 50px;
+}
+
+footer a {
+    color: white;
+}
+
+
+.footer-nav {
+    position: relative;
+    top: 20px;
+}
+
+#resp {
+    position: relative;
+    top: -20px;
+}
+.resp {
+    background-image: url("../img/responsive-ready.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 233px;
+
+}
+
+.resp h4 {
+    color: black;
+}
+
+.responsive-left {
+
+}
+
+.responsive-right {
+    float: right;
+    position: relative;
+    top: -40px;
+    background-color: transparent;
+}
+
+.responsive-icon {
+    width: 25px;
+    height: 25px;
+    background-color: #A32020;
+    color: white;
+    border-radius: 2em;
+    display: inline-block;
+}
+
+#responsive-icon-mobile {
+    position: relative;
+    top: 2px;
+    left: 10px;
+}
+
+#responsive-icon-terminal {
+    position: relative;
+    top: 2px;
+    left: 7px;
+}
+
+.services-round {
+    height: 150px;
+    width: 150px;
+    background-color: grey;
+    border-radius: 10em;
+    font-size: 100px;
+    margin-top: 50px;
+}
+
+.services-round:hover {
+    background-color: #A32020;
+}
+
+.services-round i {
+    position: relative;
+    top: 20px;
+}
+
+.homepage-services {
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.homepage-services h1 {
+    color: #A32020;
+    font-weight: bold;
+}
+
+.homepage-services a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#text-carousel {
+    height: 400px;
+    margin-top: -40px;
+    background-image: url(../img/users-back.png);
+    color: white;
+}
+
+.contact-div {
+    padding-top: 120px;
+}
+
+.login {
+    padding-top: 125px;
+}
+
+.register {
+    padding-top: 125px;
+}
+
+.contact {
+    padding-top: 125px;
+}
+
+.carousel-caption {
+   background-color: rgba(255,255,255,0.5);
+   border-radius: 1em;
+}
+
+.panel-heading {
+   background-color: #A32020 ;
+}
+
+.panel-heading a {
+   color: white;
+   text-decoration: none;
+}
+
+.panel-body {
+   height: 130px;
+   border-right: 1px solid lightgrey;
+   border-left: 1px solid lightgrey;
+}
+
+.panel-footer {
+   background-color: black;
+}
+
+.panel-footer a {
+   color: white;
+}
+
+.campus{
+
+color:black;
+background-color:white;
+background-image:url(http://pedestria.net/pedestria/img_contact/BCKG.jpg);
+}
+.yolo {
+    width: 100px;
+    height: 100px;
+}
+
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 200px;
+    margin-bottom : 100px;
+    width: 1000px;
+}
+.gratuit_premium {
+    width: 207px;
+    height: 50px;
+    text-align : center;
+    font-family: Arial;
+    font-size: 30px;
+    font-style: italic;
+    color: black;
+    background: #a32020;
+}
+.ecole {
+    width: 207px;
+    height: 50px;
+    border-radius: 0 10px 0 0;
+    text-align : center;
+    font-family: Arial;
+    font-size: 30px;
+    font-style: italic;
+    color: black;
+    background: #A32020;
+}
+.cellule {
+    height: 49px;
+}
+.cellule_rouge {
+    padding-left: 25px;
+    border: 0 none;
+    text-align: left;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: italic;
+    color: black;
+    background: #a32020;
+}
+.cellule_rouge_clair {
+    padding-left: 25px;
+    border: 0 none;
+    text-align: left;
+    font-family: Arial;
+    font-size: 15px;
+    font-style: italic;
+    color: black;
+    background: #fbe9e9;
+}
+.cellule_interieur_rouge_clair {
+    font-family: Arial;
+    font-size: 16px;
+    font-style: italic;
+    color: black;
+    background : #fbe9e9;
+}
+.cellule_interieur_rouge {
+    font-family: Arial;
+    font-size: 16px;
+    font-style: italic;
+    color: black;
+    background : #a32020;
+}
+.police {
+    text-align : center;
+    font-size: 15px;
+    font-style: italic;
+}
+.centrage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.cellule_vide {
+    padding-left: 25px;
+    border: 0 none;
+    color: white;
+    background: white;
+}
