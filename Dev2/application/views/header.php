@@ -72,6 +72,14 @@
                             </div>
                         </form>
                     </div>
+                     <?php
+                    if($this->input->post('checkbox1') == 'on')
+                        $query->andWhere('champ1 = valeur1');
+                    if($this->input->post('checkbox2') == 'on')
+                        $query->andWhere('champ2 = valeur2');
+                    if($this->input->post('checkbox3') == 'on')
+                        $query->andWhere('champ3 = valeur3');
+                    ?>
                 </div>
                 <div class="row">
                     <div class="col-lg-9">
