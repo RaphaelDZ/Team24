@@ -1,10 +1,4 @@
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 <br/>
 <div id="site_content">
 
@@ -25,6 +19,14 @@
                     </div>
                 </form>
             </div>
+            <?php
+            if($this->input->post('checkbox1') == 'on')
+                $query->andWhere('champ1 = valeur1');
+            if($this->input->post('checkbox2') == 'on')
+                $query->andWhere('champ2 = valeur2');
+            if($this->input->post('checkbox3') == 'on')
+                $query->andWhere('champ3 = valeur3');
+            ?>
 
             <div align="center">
             <!-- insert the page content here -->
